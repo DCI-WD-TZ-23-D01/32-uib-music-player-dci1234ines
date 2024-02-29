@@ -1,0 +1,105 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dbd6d6;
+    padding: 20px; 
+    border-radius: 30px; 
+    box-shadow: 30px 30px 90px #bebebe, -30px -30px 90px #ffffff; 
+}
+
+.playlist-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-button,
+.shutdown-button,
+.control-button {
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 12px; 
+    padding: 20px; 
+    cursor: pointer;
+    box-shadow: 15px 15px 45px #bebebe, -15px -15px 45px #ffffff; 
+    transition: background-color 0.3s ease; 
+    font-size: xx-large;
+}
+
+.control-button {
+   
+  margin: 40px;
+    justify-content: center;
+   
+    
+}  
+
+.shutdown-button {
+    color: #ff0000; 
+}
+.search-button:hover i,
+.shutdown-button:hover i,
+.control-button:hover i {
+    color: rgb(100, 172, 218); 
+    font-size: 25px;
+}
+.album-cover {
+    width: 400px;
+    height: 400px; 
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px #282c3b, -10px -10px 30px #969393; 
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 10px; 
+    border-radius: 10px; 
+    margin: 10px 0; 
+    background: linear-gradient(to right, #1398e6, #f6f7f8);
+}
+
+.song-info {
+    text-align: center;
+}
+
+#track-name {
+    font-size: 800;
+    font-weight: bolder;
+}
+
+#artist-name {
+    font-weight: 400;
+    color: rgb(143, 142, 142);
+    
+}
+.progress-bar2 {
+    width: 50%;
+    height: 10px; 
+    border-radius: 10px; 
+    margin: 20px;
+    box-shadow: inset 0 0 10px rgba(78, 78, 78, 0.5);
+    
+}
